@@ -73,6 +73,7 @@ public class DateDialogFragment extends DialogFragment {
                     calendar.set(Calendar.HOUR_OF_DAY, timePicker.getHour());
                     calendar.set(Calendar.MINUTE, timePicker.getMinute());
                     listener.onDate(calendar.getTime().getTime());
+                    this.dismiss();
                 }
         );
 
